@@ -1,25 +1,34 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Table from './components/Table';
+import FilterForm from './components/FilterForm';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <Header />
       </header>
-    </div>
+      <main>
+        <Container maxWidth="xl" sx={{p:3}}>
+        <Grid container spacing={3}>
+          <Grid item xs={2}>
+            <FilterForm/>
+          </Grid>
+          <Grid item xs={10}>
+            <Table />
+          </Grid>
+        </Grid>
+
+        </Container>
+
+      </main>
+    </>
   );
 }
 
