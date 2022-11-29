@@ -12,18 +12,20 @@ function App() {
   return (
     <>
       <header>
-        <Header />
+        <Container maxWidth="xl" sx={{ p: 3 }}>
+          <Header />
+        </Container>
       </header>
       <main>
-        <Container maxWidth="xl" sx={{p:3}}>
-        <Grid container spacing={3}>
-          <Grid item xs={2}>
-            <FilterForm/>
+        <Container maxWidth="xl" sx={{ p: 3 }}>
+          <Grid container spacing={3}>
+            <Grid item xs={2}>
+              <FilterForm />
+            </Grid>
+            <Grid item xs={10}>
+              <Table />
+            </Grid>
           </Grid>
-          <Grid item xs={10}>
-            <Table />
-          </Grid>
-        </Grid>
 
         </Container>
 

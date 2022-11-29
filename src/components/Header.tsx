@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
+import logo from './../logo.svg';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -54,9 +55,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" >
+      <AppBar position="static" color="transparent">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} textAlign="left" >
+          <img src={logo} alt="Logo" width={36} height={36} />
+          <Typography variant="h6" component="div"  sx={{ flexGrow: 1, p: 1 }} textAlign="left" >
             Content Tools Catalog
           </Typography>
           <Search>
