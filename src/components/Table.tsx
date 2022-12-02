@@ -6,6 +6,10 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { getItems } from './../includes/notion';
+
+
+console.log(getItems());
 
 function createData(
   name: string,
@@ -24,6 +28,7 @@ const rows = [
   createData('Cupcake', 305, 3.7, 67, 4.3),
   createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
+
 
 export default function BasicTable() {
   return (

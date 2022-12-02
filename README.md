@@ -1,5 +1,5 @@
-# ccagg
-Content Catalogs Aggregator
+# CTC
+Content Tools Catalog
 
 
 # Available Scripts
